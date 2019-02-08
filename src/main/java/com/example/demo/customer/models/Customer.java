@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class Customer implements Serializable {
     private static final long serialVersionUID = 1L;
-    long custId;
-    String name;
-    int age;
+    private long custId;
+    private String name;
+    private int age;
 
     public Customer(){
     }

@@ -2,9 +2,8 @@ package com.example.demo.controllers;
 
 import com.example.demo.customer.models.Customer;
 import com.example.demo.customer.services.CustomerService;
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -12,9 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CustomerController {
 
     @Autowired
-    JdbcTemplate jdbcTemplate;
-
-    @Autowired
+    @Qualifier("stub")
     CustomerService customerService;
 
     @RequestMapping("/")

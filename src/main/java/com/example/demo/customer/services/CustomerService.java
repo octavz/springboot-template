@@ -10,5 +10,5 @@ public interface CustomerService {
     void loadAllCustomer();
     Customer getCustomerById(long cust_id);
     void getCustomerNameById(long cust_id);
-    void getTotalNumerCustomer();
+    void getTotalNumberCustomer();
 }

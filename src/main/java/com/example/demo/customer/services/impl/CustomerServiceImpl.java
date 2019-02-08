@@ -43,7 +43,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void getTotalNumerCustomer() {
+    public void getTotalNumberCustomer() {
         int totalNumberCustomer = customerDao.getTotalNumberCustomer();
         System.out.println("Total Number Customer is: " + totalNumberCustomer);
     }
